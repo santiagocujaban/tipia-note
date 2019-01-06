@@ -190,6 +190,10 @@ input[type="button"]{
     background: #036b51
 }
 
+#princ-footer ul {
+    text-align: center;
+}
+
 #princ-footer ul li {
     list-style: none;
     font-size: 30px;
@@ -203,6 +207,28 @@ input[type="button"]{
     color: #0b213b;
 }
 
-#princ-footer ul {
-    text-align: center;
+#princ-footer ul li a:hover {
+    color: #9ec8fc;
 }
+
+#sub-footer {
+    border-top: 3px solid #000000;
+    text-align: center;
+    margin: 0;
+}
+
+#sub-footer p {
+    text-align: center;
+    padding: 10px 0;
+
+}
+
+#sub-footer p a {
+    color: #0b213b;
+    font-size: 200%;
+}
+
+
+
+
+
