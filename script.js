@@ -1,5 +1,5 @@
 function addtext() {
-  var padre = document.getElementById("padre");
+  var padre = document.getElementById("tareas");
   
   var input1 = document.createElement("INPUT");
   input1.type = "checkbox";
