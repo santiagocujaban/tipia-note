@@ -2,19 +2,46 @@
   <head>
     <meta charset="utf-8" />
     <title>TipiaNote</title>
+
+    <!--stylesheets-->>
     <link rel="stylesheet" href="style.css">
+    
   <head/>
   <body>
-    <h1>¡Bienvenido a TipiaNote!</h1>
-    <h2>¿Estás ajetreado con tus tareas? ¡Pues organízalas de una vez!</h2>
-    <p>Para comenzar a listar tus tareas, clickea en el botón <strong>Agregar nueva tarea...</strong> Introduce a continuación las actividades que quieres cumplir el día de hoy:</p>
+
+    <!--header-->
+    <header class="head-pag">
+        <h1>TipiaNote</h1>
     
-    <div id="padre">
-  
+    <!--navigation-->
+    <nav class="navi">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#TipiaNote">TipiaNote</a></li>
+        <li><a href="#¿Como usar TipiaNote?">¿Cómo usar TipiaNote?</a></li>
+        <li><a href="#Acerca de">Acerca de</a></li>
+        <li><a href="#Contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    </header>
+
+    <!--sectionHowTo-->>
+    <div class="how-to">
+        <h3>¿Cómo usar TipiaNote?</h3>
+        <p>Para comenzar a listar tus tareas, clickea en el botón <strong>Agregar nueva tarea...</strong> Introduce a continuación las actividades que quieres cumplir el día de hoy:</p>
     </div>
     
-    <input type="button" value="Agregar nueva tarea..." id="addbutton" />
+    <!--homeworks-->>
+    <div class="app-tipia">
+        <div id="tareas">
+  
+          </div>
+    </div>
+    
+    <!--buttonToGenerateHomeWorks-->>
+    <input type="button" value="Agregar nueva tarea..." id="addbutton"/>
 
+    <!--scripts-->>
     <script src="script.js"></script>
   <body/>
 <html/>
