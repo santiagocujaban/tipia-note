@@ -15,17 +15,9 @@ function addtext() {
   del.value = "x";
   
   del.onclick = function() {
-    var confirmar = confirm("¿Estas seguro de que quieres eliminar esta tarea?");
-
-    confirmar;
-
-    if(confirmar == true) {
-      padre.removeChild(input1);
-      padre.removeChild(input2);
-      padre.removeChild(del);
-    } else if(confirmar == false){
-      window.onload;
-    }
+    padre.removeChild(input1);
+    padre.removeChild(input2);
+    padre.removeChild(del);
   }
   
   padre.appendChild(del);
