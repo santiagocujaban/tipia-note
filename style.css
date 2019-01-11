@@ -1,5 +1,5 @@
 * {
-    font-family: Candara;
+    font-family: sans-serif;
     padding: 0;
     margin: 0;
     border: 0;
@@ -33,7 +33,7 @@ a:hover {
     background: #088A85;
     list-style: none;
     font-size: 30px;
-    padding: 0 4%;
+    padding: 0 3%;
     display: inline-block;
     margin-bottom: 10px;
 }
@@ -97,23 +97,23 @@ a:hover {
 }
 
 #addbutton {
+    display: block;
     border-radius: 150px;
-    width: 370px;
-    font-size: 35px;
+    width: 390px;
+    font-size: 25px;
     padding: 25px;
     margin: 29px 480px;
     text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: linear-gradient(50deg, #2776d6, #e5e763);
+    letter-spacing: 2px;
+    transition: all 300ms;
 }
 
 #addbutton:hover {
-    color: #133864;
-    width: 370px;
-    font-size: 35px;
-    padding: 20px;
-    margin: 29px 480px;
-    text-align: center;
-    background: #48596d;
-    border: 2px solid #777579;
+    transform: translateY(10px);
+    box-shadow: 0px 30px 5px -15px #4e4e4e;
 }
 
 .app-tipia {
@@ -144,6 +144,14 @@ input[type="button"]{
     margin: 5px 5px 5px 5px;
     display: inline-block;
     border-radius: 50px;
+    background: linear-gradient(100deg, #db4d4d, #266bbe);
+    color: #ffffff;
+    transition: all 300ms;
+}
+
+input[type="button"]:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 10px -2px #4e4e4e;
 }
 
 #about {
