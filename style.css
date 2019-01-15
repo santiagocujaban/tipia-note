@@ -1,159 +1,276 @@
+/*--------- GENERAL STYLES ---------*/
+
 * {
     margin: 0;
     padding: 0;
-    letter-spacing: 0;
     font-family: sans-serif;
 }
 
+/*-------------------------------*/
+
+/*--------- GENERAL TAG STYLES ---------*/
+
+section {
+    margin: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+    background-color: #f8f6f6;
+    border-radius: 50px;
+    padding: 25px;
+}
+
 body {
-    background: #ffffff;
-    padding-top: 60px; 
+    background-color: #ffffff;
+    margin-top: 50px;
 }
 
-#allPage {
-    width: 90%;
-    margin: auto;
-}
-
-#allPage h1{
+h1 {
+    letter-spacing: 2px;
     font-size: 50px;
-    margin: 20px 0;
+    margin: 20px;
     text-align: center;
 }
 
 p {
     font-size: 20px;
-    line-height: 27px;
+    padding: 20px;
 }
 
-li {
-    list-style: none;
-}
+/*-------------------------------*/
 
-a {
-    text-decoration: none;
-}
+/*--------- HEADER ---------*/
 
-#headerPage {
-    background: #3ca8b6;
+.head {
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: #f8f6f6;
     position: fixed;
-    display: block;
-    width: 100%;
-    height: 60px;
+    padding: 12px;
     left: 0;
     top: 0;
-    padding: 7px;
-    box-shadow: 0 10px 80px 5px #030303;
+    width: 100%;
+    height: 70px;
 }
 
-#principalH1 {
-    float: left;
-    font-size: 30px;
-    padding: 0 20px;
+.head h1 {
+    font-size: 40px;
     font-weight: bold;
-    color: #22282c;
-    line-height: 60px;  
-}
-
-.navi ul {
-    float: right;
-}
-
-.navi ul li {
     float: left;
-    padding: 20px 35px 20px 10px;
-    margin: 5px;
-    font-size: 21px;
+    letter-spacing: 2px;
+    color: black;
+    margin: 0 15px;
 }
 
-.navi ul li a {
-    color: #22282c;
+/*-------------------------------*/
+
+/*--------- CONTAINER, WHERE ALL IS HERE ---------*/
+
+.container {
+    padding: 20px;
+    width: 90%;
+    margin: auto;
+    /* background: #fafafa; */
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/*-------------------------------*/
+
+/*--------- IMAGE ---------*/
+
+.presentation img {
+    width: 42%;
+    border-radius: 2000px;
+    box-shadow: 5px 5px 40px 5px #000000;
+}
+
+/*-------------------------------*/
+
+/*--------- APPLICATION STYLES (INPUTS) ---------*/
+
+
+/*---- ADDBUTTON STYLES ----*/
+
+.application input[id="addbutton"]{
+    text-align: center;
+    background-color: #444444; 
+    width: 30%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    font-size: 20px;
+    color:white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 50px;
+    border: none;
     transition: all 300ms;
 }
 
-.navi ul li a:hover {
-    color: #ffffff;
+.application input[id="addbutton"]:hover {
+    transform: translateY(-10px);
+    box-shadow: 5px 5px 20px 2px #000000;
 }
 
-#principalImg img {
-    --ancho : 74%;
-    --alto : 74%;
-    float: left;
-    width: var(--ancho);
-    height: var(--alto);
-    border-radius: 0 0 100% 0;
-    /* shape-outside: ellipse(var(--ancho) var(--alto) at 1920px 0); */
-}
+/*---- HOMEWORKS STYLES  ----*/
 
-#information {
-    float: left;
-    font-size: 50px;
-    padding: 30px 20px;
-}
-
-#tipiaSection {
-    display: inline-block;
-}
-
-#contentTipiaSection img {
-    float: left;
-    width: 300px;
-    margin: 0 30px 0 0;
-}
-
-#contentTipiaSection p {
+.application div {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
     display: inline;
 }
 
-.howTo p{
-    text-align: center;
+.application div input[type="checkbox"] {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
 }
 
-#addbutton {
-    flex-direction: row;
-    justify-content: center;
-    width: 400px;
-    height: 50px;
-    margin: 4% 33%;
-    border-radius: 50px;
+.application div input[type="text"]{
+    width: 30%;
+    height: 40px;
+    margin-bottom: 40px;
+    margin-right: 5px;
     border: none;
-    text-transform: uppercase;
-    font-size: 25px;
-    color: white;
+    font-size: 20px;
+    
+}
+
+.application div input[type="button"]{
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    border-radius: 20px;
+    border: none;
     font-weight: bold;
-    letter-spacing: 2px;
-    background: linear-gradient(50deg, #095854, #3ca8b6);
+    color: white;
+    background-color: #444444;
+    transition: all 300ms;
+    box-sizing: border-box;
 }
 
-#homeworks input[type="chechbox"], #homeworks input[type="text"], #homeworks input[type="button"]{
-    margin: auto;
+.application div input[type="button"]:hover {
+    transform: translateY(-5px);
+    box-shadow: 3px 3px 15px 2px #000000;
 }
+/*-------------------------------*/
 
-#contactSection p {
-    margin-bottom: 50px;
-}
+/*--------- FOOT DESIGN ---------*/
 
-#footerSection {
+.foot {
     width: 100%;
-    background: #095854;
+    background: #000000;
+    padding-bottom: 0;
+    color: white;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
-#footerSection a {
+.foot ul {
+    text-align: center;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+}
+
+.foot ul li {
+    display: inline;
+    font-size: 20px;
+    margin: 0 20px;
+}
+
+.foot ul li a {
     text-decoration: none;
     color: white;
 }
 
-#principalFooter ul {
+.foot p {
     text-align: center;
-    padding: 15px;
 }
 
-#principalFooter ul li {
-    display: inline;
-    font-size: 30px;
-    margin: 0 50px;
+.foot p a {
+    text-decoration: none;
+    color: white;
 }
 
-#secondaryFooter p{
-    text-align: center;
+.foot ul li a i {
+    margin: 0 10px;
+}
+
+/*-------------------------------*/
+
+/*--------- MEDIA QUERIES  ---------*/
+
+@media screen and (max-width: 800px){
+    .application div input[type="checkbox"] {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .application div input[type="text"]{
+        width: 70%;
+        height: 70px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .application input[id="addbutton"]{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .container {
+        padding: 0;
+        width: 100%;
+        margin: auto;
+        /* background: #fafafa; */
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    section {
+        margin: 10px 0;
+        box-sizing: border-box;
+        overflow: hidden;
+        text-align: center;
+        background-color: #f8f6f6;
+        border-radius: 0;
+        padding: 25px;
+    }
+}
+
+@media screen and (max-width: 333px){
+    .application input[id="addbutton"]{
+        width: 100%;
+    }
+
+    .application div input[type="checkbox"] {
+        display: block;
+        width: 20px;
+        height: 20px;
+        margin: 5px auto;
+    }
+    
+    .application div input[type="text"]{
+        display: block;
+        width: 100%;
+        height: 40px;
+        margin-bottom: 0;
+        margin: 5px auto;
+    }
+    
+    .application div input[type="button"]{
+        display: block;
+        width: 25px;
+        height: 25px;
+        margin: 5px auto;
+    }
+    
+    .application div input[type="button"]:hover {
+        transform: translateY(-5px);
+        box-shadow: 3px 3px 15px 2px #000000;
+    }
 }
