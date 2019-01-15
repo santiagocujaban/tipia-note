@@ -36,10 +36,11 @@ function addinputs() {
     padre.removeChild(input1);
     padre.removeChild(input2);
     padre.removeChild(del);
+    padre.removeChild(salto);
   }
   
   padre.appendChild(del);
 
-  var salto = document.createElement("p"); // line break between input groups
+  var salto = document.createElement("br"); // line break between input groups
   padre.appendChild(salto);
 }
